@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quran Scroll Al-Fatiha</title>
+<meta name="description" content="সূরা আল-ফাতিহা: আরবি আয়াত, বাংলা অর্থ ও শব্দার্থ, হাদিসের তিনটি ঘটনা এবং সাতটি শিক্ষা।">
+<meta property="og:title" content="সূরা আল-ফাতিহা | কুরআন স্ক্রল">
+<meta property="og:description" content="আরবি আয়াত, বাংলা অর্থ ও শব্দার্থ, হাদিসের ঘটনা এবং সাতটি শিক্ষা।">
+<meta property="og:url" content="https://quran.mdobaidullah.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anek+Bangla:wght@400;500;600;700&family=Reem+Kufi:wght@500;700&family=Tiro+Bangla:ital@0;1&display=swap">
+<style>
+/* VOICE everyday learning, reverent and calm: few hues, fine detail, air
+   IDEA an illuminated mushaf read as one long scroll: gold-ruled text block, red interlinear glosses, notes in the margin
+   PICTURE the illuminated headpiece: surah name in a Kufic cartouche on a lapis star-and-cross field, framed in gold
+   COLOUR lapis #1B3A7C fields, ivory paper #FBF6EA, gold #B58A2E rules, rubric red #B3261E; at night the Blue Quran: indigo with gold
+   TYPE Reem Kufi title, Amiri Quran verses, Tiro Bangla reading text, Anek Bangla controls and labels
+   LAYOUT laptop: headpiece across the lapis band, title row under it, then a ruled text block with a margin column; phone: one column */
+:root{color-scheme:light dark;--paper:#FBF6EA;--ink:#1F1A14;--muted:#6A5D49;--rule:#E3D6B8;--gold:#B58A2E;--gold-ink:#7C5913;--red:#B3261E;--lapis:#1B3A7C;--tint:#EDF0F7;--band:#1B3A7C;--on:#F6EEDB;--on2:#CCD5EA;--hi:#E3C374;--ar:clamp(27px,5.4vw,38px);--k:1;--bn:'Tiro Bangla','Noto Serif Bengali','Kohinoor Bangla',serif;--ui:'Anek Bangla','Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;--arf:'Amiri Quran','Amiri','Scheherazade New','Noto Naskh Arabic','Geeza Pro',serif}
+@supports (color:light-dark(#000,#fff)){:root{--paper:light-dark(#FBF6EA,#101B36);--ink:light-dark(#1F1A14,#F1E7D0);--muted:light-dark(#6A5D49,#B9B19F);--rule:light-dark(#E3D6B8,#28385F);--gold:light-dark(#B58A2E,#D9B660);--gold-ink:light-dark(#7C5913,#E5C677);--red:light-dark(#B3261E,#F2907F);--lapis:light-dark(#1B3A7C,#B7C8F2);--tint:light-dark(#EDF0F7,#18284D);--band:light-dark(#1B3A7C,#081128)}}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 var(--bn);overflow-x:clip}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (min-width:900px){html{scroll-padding-top:76px}}
+a{color:inherit;text-underline-offset:3px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{opacity:.4;cursor:default}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+p{margin:0 0 .9em}
+.wrap{max-width:1180px;margin-inline:auto}
+.band{padding-block:clamp(28px,4vw,64px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
+.dark{background:var(--band);color:var(--on)}
+.saw{font-family:var(--arf);font-size:1.05em;line-height:1}
+.ari{font-family:var(--arf)}
+.cite{font:500 14px/1.4 var(--ui);color:var(--gold-ink);white-space:nowrap}
+#prog{position:fixed;top:0;left:0;right:0;height:3px;background:var(--hi);transform:scaleX(0);transform-origin:0 50%;z-index:60;pointer-events:none}
+.nav{background:var(--band);color:var(--on);padding:6px max(5vw,16px);border-bottom:1px solid rgba(227,195,116,.3)}
+.nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 16px}
+.brand{display:flex;align-items:center;gap:10px;min-height:44px;font:600 18px/1.2 var(--ui);text-decoration:none}
+.brand svg{width:26px;height:26px}
+.chip{font:600 13px/1 var(--ui);color:#13285A;background:var(--hi);padding:5px 9px;border-radius:999px}
+.links{display:flex;overflow-x:auto;scrollbar-width:none}
+.links a{flex:none;font:500 16px/1 var(--ui);color:var(--on2);text-decoration:none;padding:14px 11px;border-radius:8px}
+.links a:hover{color:var(--on);background:rgba(255,255,255,.08)}
+@media (min-width:900px){.nav{position:sticky;top:0;z-index:50}}
+.head{padding-top:clamp(22px,3vw,44px)}
+.unwan{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(8px,2.4vw,28px);margin:6px;padding:clamp(16px,2.8vw,32px) clamp(12px,3.4vw,40px);background:#132F69 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='none' stroke='%23E3C374' stroke-opacity='.42'%3E%3Cpath d='M44 22L37.56 28.44 37.56 37.56 28.44 37.56 22 44 15.56 37.56 6.44 37.56 6.44 28.44 0 22 6.44 15.56 6.44 6.44 15.56 6.44 22 0 28.44 6.44 37.56 6.44 37.56 15.56Z'/%3E%3Ccircle cx='22' cy='22' r='6'/%3E%3Ccircle r='4'/%3E%3Ccircle cx='44' r='4'/%3E%3Ccircle cy='44' r='4'/%3E%3Ccircle cx='44' cy='44' r='4'/%3E%3C/g%3E%3C/svg%3E") 0 0/44px 44px;border:2px solid var(--hi);border-radius:4px;box-shadow:0 0 0 5px var(--band),0 0 0 6px var(--hi)}
+.shamsa{width:clamp(28px,7vw,68px);height:auto;aspect-ratio:1}
+.cart{background:#F6ECD4;border:2px solid var(--hi);border-radius:999px;box-shadow:inset 0 0 0 4px #F6ECD4,inset 0 0 0 5px #B58A2E;padding:.1em .6em .22em;text-align:center}
+.kufi{display:block;font:700 clamp(30px,8vw,84px)/1.3 'Reem Kufi','Amiri',serif;color:#16336F}
+.tb{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px 48px;align-items:end;margin-top:clamp(24px,3.4vw,40px)}
+h1{margin:0;font:400 clamp(38px,6vw,58px)/1.2 var(--bn);color:var(--on)}
+.sub{margin:.35em 0 0;font-size:18px;color:var(--on2);max-width:32em}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.facts li{font:500 15px/1.2 var(--ui);border:1px solid rgba(227,195,116,.55);border-radius:999px;padding:9px 14px}
+.cta{display:inline-flex;align-items:center;min-height:48px;margin-top:14px;padding:0 22px;border-radius:999px;background:var(--hi);color:#13285A;font:600 17px/1 var(--ui);text-decoration:none}
+h2{margin:0 0 .45em;font:400 clamp(30px,4.2vw,42px)/1.25 var(--bn);text-wrap:balance}
+h3{margin:0 0 .5em;font:600 18px/1.35 var(--ui)}
+.intro .wrap,.vhead{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px clamp(28px,4vw,60px);align-items:start}
+.intro p,.hq,.lead,.lhead p{max-width:44em}
+.names{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px 18px;margin:0}
+.names dt{font:600 16px/1.75 var(--ui);color:var(--gold-ink)}
+.names dd{margin:0}
+.struct{margin:0;padding:clamp(18px,2.4vw,28px);background:var(--tint);border-radius:12px}
+.cells{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:16px 0 18px}
+.cells a,.lros{position:relative;display:grid;place-items:center;aspect-ratio:1;text-decoration:none}
+.cells a{width:100%;max-width:60px;justify-self:center;font:600 18px/1 var(--ui);color:var(--paper)}
+.cells svg,.lros svg,.ros svg{position:absolute;inset:0;width:100%;height:100%}
+.cells b,.lros b,.ros b{position:relative;font-weight:inherit}
+.cells .g1 svg{fill:var(--gold-ink)}
+.cells .g2 svg{fill:var(--lapis)}
+.cells .g3 svg{fill:var(--red)}
+.legend{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:8px;font:500 16px/1.4 var(--ui)}
+.legend li{display:flex;gap:12px;align-items:center}
+.k{flex:none;width:12px;height:12px;transform:rotate(45deg)}
+.k.g1{background:var(--gold-ink)}
+.k.g2{background:var(--lapis)}
+.k.g3{background:var(--red)}
+.struct figcaption{color:var(--muted);font-size:16px;line-height:1.65}
+.vhead{align-items:end;margin-bottom:26px}
+.hq{margin:0;color:var(--muted)}
+.hq .ari{display:block;margin:.3em 0;font-size:clamp(21px,3vw,26px);line-height:2;color:var(--lapis);text-align:right}
+.tools{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;font:500 15px/1 var(--ui)}
+.seg{display:inline-flex;padding:3px;border:1px solid var(--gold);border-radius:999px}
+.seg button,.tbtn{min-height:44px;padding:0 16px;border:0;border-radius:999px;background:none;font:500 15px/1 var(--ui)}
+.seg button[aria-pressed=true]{background:var(--lapis);color:var(--paper)}
+.tbtn{border:1px solid var(--gold)}
+.tbtn[aria-pressed=true]{background:var(--tint);border-color:var(--lapis);color:var(--lapis)}
+.size{display:inline-flex;align-items:center;gap:6px}
+.size button{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;background:none;font:600 20px/1 var(--ui)}
+.book{padding:clamp(6px,1.6vw,18px) clamp(16px,3vw,44px);border-radius:3px;box-shadow:inset 0 0 0 1px var(--gold),inset 0 0 0 5px var(--paper),inset 0 0 0 6px var(--lapis),inset 0 0 0 8px var(--paper),inset 0 0 0 9px var(--gold)}
+.ayah{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:18px clamp(24px,3.6vw,52px);padding:clamp(22px,3vw,36px) 0;border-top:1px solid var(--rule)}
+.ayah:first-child{border-top:0}
+.ar{margin:0;font-family:var(--arf);font-size:calc(var(--ar) * var(--k));line-height:2.2;text-align:right}
+.ros{position:relative;display:inline-grid;place-items:center;width:1.15em;height:1.15em;vertical-align:middle}
+.ros svg{fill:var(--paper);stroke:var(--gold);stroke-width:2.2}
+.ros b{font:400 .48em/1 var(--arf);color:var(--red)}
+.wbw{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.w{display:grid;justify-items:center;row-gap:4px;text-align:center}
+.w b{font-weight:400;line-height:2.15;white-space:nowrap}
+.w small{max-width:8.5em;font:500 14px/1.35 var(--ui);color:var(--red)}
+html:not(.wbw) .wbw,html.wbw .full,html.no-tr .tr{display:none}
+@media (prefers-reduced-motion:no-preference){html.wbw .w{animation:rise .4s ease-out both}}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}}
+.tr{margin:.6em 0 0;font-style:italic;font-size:16px;color:var(--muted)}
+.bn{margin:.5em 0 0;font-size:clamp(18px,1.9vw,20px);line-height:1.7}
+.vn{margin-inline-end:.5em;font:600 .85em/1 var(--ui);color:var(--red)}
+.copy{min-height:44px;margin-top:10px;padding:0 16px;border:1px solid var(--rule);border-radius:999px;background:none;font:500 14px/1 var(--ui);color:var(--muted)}
+.side{display:grid;gap:14px;align-content:start;font-size:16px;line-height:1.7}
+.side p{margin:0}
+.reply{padding:14px 16px;border-radius:12px;background:var(--tint)}
+.rl{display:flex;align-items:center;gap:8px;font:600 14px/1.3 var(--ui);color:var(--lapis)}
+.rl svg{flex:none;width:16px;height:16px;fill:var(--lapis)}
+.side .rar{margin-top:.2em;font-family:var(--arf);font-size:calc(23px * var(--k));line-height:2;color:var(--lapis);text-align:right}
+.side .alt{margin-top:.3em;color:var(--muted);font-size:15px}
+.reply.none{background:none;border:1px dashed var(--rule);color:var(--muted)}
+.note b{margin-inline-end:.45em;font:600 14px/1 var(--ui);color:var(--gold-ink)}
+.amin{padding:26px 0 14px;border-top:1px solid var(--rule);text-align:center}
+.amin .ari{display:block;font-size:calc(var(--ar) * 1.1);line-height:1.8;color:var(--gold-ink)}
+.amin p{max-width:34em;margin:.2em auto 0;font-size:16px;color:var(--muted)}
+.stories h2,.foot h2{color:var(--on)}
+.lead{color:var(--on2)}
+.story{display:grid;grid-template-columns:110px minmax(0,1.7fr) minmax(0,1fr);gap:16px clamp(22px,3.6vw,52px);padding:clamp(24px,3vw,38px) 0;border-top:1px solid rgba(227,195,116,.3)}
+.story>svg{width:100%;max-width:110px;height:auto;color:var(--hi)}
+.story h3{margin:0 0 .45em;font:400 clamp(24px,2.8vw,30px)/1.3 var(--bn);color:var(--hi)}
+.story .src{margin:0;font:500 14px/1.5 var(--ui);color:var(--on2)}
+.take{align-self:start;padding:16px 18px;border:1px solid rgba(227,195,116,.45);border-radius:12px}
+.take b{display:block;margin-bottom:6px;font:600 14px/1.3 var(--ui);color:var(--hi)}
+.take p{margin:0}
+.lhead{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px 40px;margin-bottom:8px}
+.lhead p{color:var(--muted);margin:0}
+.meter{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font:500 15px/1.3 var(--ui);color:var(--muted)}
+.meter svg{width:22px;height:22px;fill:none;stroke:var(--gold);stroke-width:2.6}
+.meter svg.on{fill:var(--gold)}
+.meter span{margin-inline-start:6px}
+.lesson{display:grid;grid-template-columns:60px minmax(0,1.5fr) minmax(0,1fr);gap:14px clamp(20px,3.4vw,48px);padding:clamp(22px,2.8vw,32px) 0;border-top:1px solid var(--rule);align-items:start}
+.lros{width:56px;font:600 20px/1 var(--ui);color:var(--red)}
+.lros svg{fill:var(--paper);stroke:var(--gold);stroke-width:2.2}
+.lesson h3{margin:0 0 .3em;font:400 clamp(23px,2.5vw,28px)/1.35 var(--bn)}
+.lesson p{margin:0}
+.prac{padding:16px 18px;border-radius:12px;background:var(--tint)}
+.prac b{display:block;margin-bottom:4px;font:600 14px/1.3 var(--ui);color:var(--lapis)}
+.done{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;padding:0 18px;border:1px solid var(--lapis);border-radius:999px;background:none;color:var(--lapis);font:600 15px/1 var(--ui)}
+.done[aria-pressed=true]{background:var(--lapis);color:var(--paper)}
+.foot .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:28px clamp(28px,5vw,72px)}
+.foot h3{color:var(--hi)}
+.foot ul{margin:0;padding-left:1.1em;font-size:16px;line-height:1.7;color:var(--on2)}
+.foot li{margin:.4em 0}
+.foot a{color:var(--on)}
+@media (max-width:899px){.intro .wrap,.vhead,.ayah,.foot .wrap{grid-template-columns:minmax(0,1fr)}.story{grid-template-columns:76px minmax(0,1fr)}.story .take{grid-column:2}.lesson{grid-template-columns:56px minmax(0,1fr)}.prac{grid-column:2}}
+@media (max-width:700px){.tb{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:600px){.story{grid-template-columns:minmax(0,1fr)}.story>svg{max-width:64px}.story .take,.prac{grid-column:1/-1}.lesson{grid-template-columns:44px minmax(0,1fr)}.lros{width:44px;font-size:17px}.names{grid-template-columns:minmax(0,1fr);gap:0}.names dd{margin-bottom:8px}.book{padding-inline:14px}}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="khatam" viewBox="0 0 40 40"><path d="M38 20 32.7 25.3 32.7 32.7 25.3 32.7 20 38 14.7 32.7 7.3 32.7 7.3 25.3 2 20 7.3 14.7 7.3 7.3 14.7 7.3 20 2 25.3 7.3 32.7 7.3 32.7 14.7Z"/></symbol>
+ <symbol id="shamsa" viewBox="0 0 40 40"><path fill="#E3C374" d="M38 20 32.7 25.3 32.7 32.7 25.3 32.7 20 38 14.7 32.7 7.3 32.7 7.3 25.3 2 20 7.3 14.7 7.3 7.3 14.7 7.3 20 2 25.3 7.3 32.7 7.3 32.7 14.7Z"/><path fill="none" stroke="#132F69" stroke-width="1.3" transform="rotate(22.5 20 20)" d="M33 20 29.2 23.8 29.2 29.2 23.8 29.2 20 33 16.2 29.2 10.8 29.2 10.8 23.8 7 20 10.8 16.2 10.8 10.8 16.2 10.8 20 7 23.8 10.8 29.2 10.8 29.2 16.2Z"/><circle cx="20" cy="20" r="6" fill="#132F69" stroke="#E3C374" stroke-width="1.4"/><circle cx="20" cy="20" r="2.2" fill="#E3C374"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="পাতার অংশ">
+ <div class="wrap">
+  <a class="brand" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#shamsa"/></svg>কুরআন স্ক্রল <span class="chip">ডেমো</span></a>
+  <div class="links"><a href="#intro">পরিচিতি</a><a href="#verses">আয়াত</a><a href="#stories">কাহিনি</a><a href="#lessons">শিক্ষা</a></div>
+ </div>
+</nav>
+
+<header class="dark band head" id="top">
+ <div class="wrap">
+  <div class="unwan" role="img" aria-label="সূরা আল-ফাতিহার অলংকৃত শিরোনাম">
+   <svg class="shamsa" viewBox="0 0 40 40" aria-hidden="true"><use href="#shamsa"/></svg>
+   <div class="cart"><span class="kufi" lang="ar" dir="rtl">سورة الفاتحة</span></div>
+   <svg class="shamsa" viewBox="0 0 40 40" aria-hidden="true"><use href="#shamsa"/></svg>
+  </div>
+  <div class="tb">
+   <div>
+    <h1>সূরা আল-ফাতিহা</h1>
+    <p class="sub">আল-ফাতিহা মানে সূচনা। কুরআনের প্রথম সূরা, যা নামাজের প্রতিটি রাকাতে পড়া হয়।</p>
+   </div>
+   <div>
+    <ul class="facts"><li>৭ আয়াত</li><li>মক্কায় অবতীর্ণ</li><li>পারা ১</li><li>ফরজ নামাজে দিনে ১৭ বার পঠিত</li></ul>
+    <a class="cta" href="#verses">পড়া শুরু করুন</a>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="band intro" id="intro">
+ <div class="wrap">
+  <div>
+   <h2>সাত আয়াতে পুরো কুরআনের সারকথা</h2>
+   <p>কুরআন খুললে প্রথমেই এই সূরা। এতে আছে আল্লাহর প্রশংসা, তাঁর পরিচয়, বান্দার অঙ্গীকার, আর জীবনের সবচেয়ে জরুরি প্রার্থনা: সঠিক পথের দিশা। তাই একে বলা হয় উম্মুল কুরআন, অর্থাৎ কুরআনের মূল।</p>
+   <p>নবীজি <span class="saw" lang="ar">ﷺ</span> বলেছেন, যে নামাজে উম্মুল কুরআন পড়া হয় না, সে নামাজ অসম্পূর্ণ। <span class="cite">সহিহ মুসলিম ৩৯৫</span></p>
+   <h3>এই সূরার আরও কয়েকটি নাম</h3>
+   <dl class="names">
+    <dt>উম্মুল কুরআন</dt><dd>কুরআনের মূল</dd>
+    <dt>আস-সাবউল মাসানী</dt><dd>বারবার পঠিত সাত আয়াত</dd>
+    <dt>আস-সালাহ</dt><dd>নামাজ; হাদিসে কুদসিতে ফাতিহাকে এ নামেই বলা হয়েছে</dd>
+    <dt>আর-রুকইয়াহ</dt><dd>আরোগ্যের পাঠ</dd>
+   </dl>
+  </div>
+  <figure class="struct">
+   <h3>এক নজরে সূরার গঠন</h3>
+   <div class="cells" id="cells"></div>
+   <ul class="legend">
+    <li><i class="k g1"></i><span>আয়াত ১–৪: আল্লাহর প্রশংসা ও পরিচয়</span></li>
+    <li><i class="k g2"></i><span>আয়াত ৫: অঙ্গীকার, আল্লাহ ও বান্দার মাঝে</span></li>
+    <li><i class="k g3"></i><span>আয়াত ৬–৭: বান্দার প্রার্থনা</span></li>
+   </ul>
+   <figcaption>হাদিসে কুদসিতে আল্লাহ বলেন, ফাতিহার অর্ধেক আমার, অর্ধেক আমার বান্দার। এই ভাগ শুরু হয় ‘আলহামদু লিল্লাহ’ থেকে। <span class="cite">সহিহ মুসলিম ৩৯৫</span></figcaption>
+  </figure>
+ </div>
+</section>
+
+<section class="band verses" id="verses">
+ <div class="wrap">
+  <div class="vhead">
+   <div>
+    <h2>সাত আয়াত, প্রতিটির জবাবসহ</h2>
+    <p class="hq">নবীজি <span class="saw" lang="ar">ﷺ</span> জানিয়েছেন, আল্লাহ তাআলা বলেন:<span class="ari" lang="ar" dir="rtl">قَسَمْتُ الصَّلَاةَ بَيْنِي وَبَيْنَ عَبْدِي نِصْفَيْنِ، وَلِعَبْدِي مَا سَأَلَ</span>“আমি নামাজকে আমার ও আমার বান্দার মাঝে দুই ভাগে ভাগ করেছি, আর আমার বান্দা যা চাইবে তা পাবে।” বান্দা ফাতিহার একেকটি আয়াত পড়লে আল্লাহ তার জবাব দেন; প্রতিটি আয়াতের সঙ্গে সেই জবাব দেওয়া আছে। <span class="cite">সহিহ মুসলিম ৩৯৫</span></p>
+   </div>
+   <div class="tools" role="group" aria-label="পড়ার সেটিং">
+    <div class="seg" role="group" aria-label="পড়ার ধরন">
+     <button type="button" id="m-full" aria-pressed="true">পূর্ণ আয়াত</button>
+     <button type="button" id="m-wbw" aria-pressed="false">শব্দে শব্দে</button>
+    </div>
+    <button type="button" class="tbtn" id="t-tr" aria-pressed="true">উচ্চারণ</button>
+    <span class="size">আরবি লেখা <button type="button" id="s-dn" aria-label="আরবি লেখা ছোট করুন">−</button><button type="button" id="s-up" aria-label="আরবি লেখা বড় করুন">+</button></span>
+   </div>
+  </div>
+  <div class="book">
+   <div id="ayat"></div>
+   <div class="amin"><span class="ari" lang="ar" dir="rtl">آمِين</span><p>সূরা শেষে বলা হয় আ-মীন, অর্থ: হে আল্লাহ, কবুল করো। এটি সূরার অংশ নয়, তবে পাঠ শেষে বলা সুন্নত।</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark band stories" id="stories">
+ <div class="wrap">
+  <h2>তিনটি ঘটনায় ফাতিহার মর্যাদা</h2>
+  <p class="lead">প্রতিটি ঘটনা সহিহ হাদিস থেকে নেওয়া, সহজ বাংলায় বলা।</p>
+  <div id="story-list"></div>
+ </div>
+</section>
+
+<section class="band lessons" id="lessons">
+ <div class="wrap">
+  <div class="lhead">
+   <div><h2>সাত আয়াত থেকে সাতটি শিক্ষা</h2><p>প্রতিটি শিক্ষার সঙ্গে একটি ছোট অনুশীলন। করে ফেললে চিহ্ন দিন; এই ব্রাউজারে তা মনে রাখা হবে।</p></div>
+   <div class="meter" id="meter" aria-live="polite"></div>
+  </div>
+  <div id="lesson-list"></div>
+ </div>
+</section>
+</main>
+
+<footer class="dark band foot">
+ <div class="wrap">
+  <div>
+   <h2>পরের সূরা: আল-বাকারা</h2>
+   <p>এই ডেমোতে আপাতত শুধু সূরা আল-ফাতিহা আছে।</p>
+   <span class="chip">শীঘ্রই</span>
+  </div>
+  <div>
+   <h3>তথ্যসূত্র ও নোট</h3>
+   <ul>
+    <li>আরবি পাঠ: উসমানী রসম, হাফস ‘আন আসিম।</li>
+    <li>বাংলা অর্থ, শব্দার্থ ও ব্যাখ্যা এই ডেমোর জন্য সহজ ভাষায় লেখা। প্রকাশের আগে আলেমের মাধ্যমে যাচাই করে নিন, অথবা কোনো স্বীকৃত অনুবাদ ব্যবহার করুন।</li>
+    <li>বাংলা উচ্চারণ আনুমানিক; সহিহ তিলাওয়াত শিখুন অভিজ্ঞ কারির কাছে।</li>
+    <li>হাদিস: <a href="https://sunnah.com/muslim:395">সহিহ মুসলিম ৩৯৫</a>, <a href="https://www.sunnah.com/muslim:806">সহিহ মুসলিম ৮০৬</a>, <a href="https://sunnah.com/bukhari:4474">সহিহ বুখারি ৪৪৭৪</a>, <a href="https://sunnah.com/bukhari:2276">সহিহ বুখারি ২২৭৬</a>, <a href="https://sunnah.com/bukhari:5736">সহিহ বুখারি ৫৭৩৬</a>।</li>
+    <li>কুরআনের উদ্ধৃতি: সূরা আন-নিসা ৪:৬৯, সূরা আল-আনফাল ৮:২৪।</li>
+   </ul>
+  </div>
+ </div>
+</footer>
+
+<script>
+{
+const BN="০১২৩৪৫৬৭৮৯",AD="٠١٢٣٤٥٦٧٨٩";
+const bn=n=>String(n).replace(/\d/g,d=>BN[d]);
+const ad=n=>String(n).replace(/\d/g,d=>AD[d]);
+const saw=s=>s.replace(/ﷺ/g,'<span class="saw" lang="ar">ﷺ</span>');
+const $=id=>document.getElementById(id);
+const R=document.documentElement;
+const star='<svg viewBox="0 0 40 40" aria-hidden="true"><use href="#khatam"/></svg>';
+const ros=n=>`<span class="ros" lang="bn" role="img" aria-label="আয়াত ${bn(n)}">${star}<b>${ad(n)}</b></span>`;
+
+const AYAT=[
+{n:1,tr:"বিসমিল্লা-হির রাহমা-নির রাহীম",bn:"পরম করুণাময়, অসীম দয়ালু আল্লাহর নামে (শুরু করছি)।",
+ w:[["بِسْمِ","নামে"],["ٱللَّهِ","আল্লাহর"],["ٱلرَّحْمَٰنِ","পরম করুণাময়"],["ٱلرَّحِيمِ","অসীম দয়ালু"]],
+ none:"হাদিসে জবাবের ধারা শুরু হয়েছে পরের আয়াত, ‘আলহামদু লিল্লাহ’ থেকে।",
+ note:"রাহমান ও রাহীম, দুটি নামই এসেছে ‘রাহমাহ’ (দয়া) শব্দ থেকে। আলেমদের ব্যাখ্যায় রাহমান মানে যাঁর দয়া সমগ্র সৃষ্টিকে ঘিরে রেখেছে, আর রাহীম মানে যাঁর দয়া মুমিনদের জন্য চিরস্থায়ী। আমাদের দেশে প্রচলিত মুসহাফের গণনায় বিসমিল্লাহ ফাতিহার প্রথম আয়াত।"},
+{n:2,tr:"আলহামদু লিল্লা-হি রাব্বিল ‘আ-লামীন",bn:"সমস্ত প্রশংসা আল্লাহর, যিনি সকল জগতের প্রতিপালক।",
+ w:[["ٱلْحَمْدُ","সমস্ত প্রশংসা"],["لِلَّهِ","আল্লাহর জন্য"],["رَبِّ","প্রতিপালক"],["ٱلْعَٰلَمِينَ","সকল জগতের"]],
+ reply:{ar:"حَمِدَنِي عَبْدِي",bn:"আমার বান্দা আমার প্রশংসা করল।"},
+ note:"‘হামদ’ শুধু প্রশংসা নয়, এতে মিশে আছে ভালোবাসা আর কৃতজ্ঞতা। ‘রব’ শব্দে আছে লালন-পালনের ভাব: যিনি সৃষ্টি করেন, রিজিক দেন, ধাপে ধাপে পূর্ণতার দিকে নিয়ে যান। ‘আলামীন’ মানে সব জগৎ: মানুষ, জিন, প্রাণী, নক্ষত্র, সবকিছু।"},
+{n:3,tr:"আর-রাহমা-নির রাহীম",bn:"যিনি পরম করুণাময়, অসীম দয়ালু।",
+ w:[["ٱلرَّحْمَٰنِ","পরম করুণাময়"],["ٱلرَّحِيمِ","অসীম দয়ালু"]],
+ reply:{ar:"أَثْنَى عَلَيَّ عَبْدِي",bn:"আমার বান্দা আমার গুণগান করল।"},
+ note:"‘রব’ বলার ঠিক পরেই আবার দয়ার কথা, যেন বান্দা বুঝে নেয়: তাঁর প্রতিপালন কঠোর শাসকের নয়, পরম দয়ালুর। বিসমিল্লাহর পর এ নিয়ে দ্বিতীয়বার এল রাহমান ও রাহীম।"},
+{n:4,tr:"মা-লিকি ইয়াওমিদ্দীন",bn:"প্রতিদান দিবসের মালিক।",
+ w:[["مَٰلِكِ","মালিক"],["يَوْمِ","দিবসের"],["ٱلدِّينِ","প্রতিদানের"]],
+ reply:{ar:"مَجَّدَنِي عَبْدِي",bn:"আমার বান্দা আমার মহিমা ঘোষণা করল।",alt:"আরেক বর্ণনায়: “আমার বান্দা তার সব বিষয় আমার কাছে সঁপে দিল।”"},
+ note:"দয়ার কথার পরেই বিচারের কথা: আশা আর ভয়ের ভারসাম্য। ‘দ্বীন’ শব্দের এক অর্থ প্রতিদান; সেদিন প্রতিটি কাজের ন্যায্য ফল মিলবে। অন্য এক কিরাআতে পড়া হয় <span class=\"ari\" lang=\"ar\">مَلِكِ</span> (মালিকি), অর্থ ‘বাদশাহ’; দুটি অর্থই আল্লাহর জন্য সত্য।"},
+{n:5,tr:"ইয়্যা-কা না‘বুদু ওয়া ইয়্যা-কা নাসতা‘ঈন",bn:"আমরা কেবল তোমারই ইবাদত করি এবং কেবল তোমারই কাছে সাহায্য চাই।",
+ w:[["إِيَّاكَ","কেবল তোমারই"],["نَعْبُدُ","আমরা ইবাদত করি"],["وَإِيَّاكَ","এবং কেবল তোমারই কাছে"],["نَسْتَعِينُ","আমরা সাহায্য চাই"]],
+ reply:{ar:"هَذَا بَيْنِي وَبَيْنَ عَبْدِي، وَلِعَبْدِي مَا سَأَلَ",bn:"এটি আমার ও আমার বান্দার মাঝে; আর আমার বান্দা যা চাইবে, তা সে পাবে।"},
+ note:"এখানে কথার ভঙ্গি বদলে যায়। এতক্ষণ আল্লাহর কথা বলা হচ্ছিল ‘তিনি’ হিসেবে, এবার সরাসরি ‘তুমি’, যেন প্রশংসা করতে করতে বান্দা তাঁর সামনে এসে দাঁড়াল। ‘ইয়্যাকা’ (তোমাকেই) শব্দটি আগে আসায় অর্থ দাঁড়ায়: শুধু তুমি, আর কেউ নয়। আর ‘আমি’ নয়, ‘আমরা’; একা নামাজ পড়লেও মুমিন এক উম্মাহর অংশ।"},
+{n:6,tr:"ইহদিনাস সিরা-তাল মুসতাকীম",bn:"আমাদের সরল-সঠিক পথে পরিচালিত করো।",
+ w:[["ٱهْدِنَا","আমাদের পরিচালিত করো"],["ٱلصِّرَٰطَ","পথে"],["ٱلْمُسْتَقِيمَ","সরল-সঠিক"]],
+ none:"এই আয়াত আর পরের আয়াত মিলিয়ে আল্লাহর একটি জবাব; ৭ নং আয়াতে দেখুন।",
+ note:"পুরো সূরায় চাওয়া একটিই: সঠিক পথ। হিদায়াত মানে শুধু পথ চেনা নয়; সে পথে চলার তাওফিক আর শেষ পর্যন্ত অবিচল থাকা। তাই যিনি পথেই আছেন, তিনিও প্রতিদিন বারবার এই দোয়া করেন।"},
+{n:7,tr:"সিরা-তাল্লাযীনা আন‘আমতা ‘আলাইহিম, গাইরিল মাগদূবি ‘আলাইহিম ওয়ালাদ্ দ্বোয়া-ল্লীন",bn:"তাদের পথ, যাদের তুমি অনুগ্রহ করেছ; তাদের নয়, যারা ক্রোধের শিকার, আর তাদেরও নয়, যারা পথভ্রষ্ট।",
+ w:[["صِرَٰطَ","পথ"],["ٱلَّذِينَ","যাদের"],["أَنْعَمْتَ","তুমি অনুগ্রহ করেছ"],["عَلَيْهِمْ","তাদের প্রতি"],["غَيْرِ","নয়"],["ٱلْمَغْضُوبِ","ক্রোধপ্রাপ্ত"],["عَلَيْهِمْ","তাদের উপর"],["وَلَا","এবং না"],["ٱلضَّآلِّينَ","পথভ্রষ্টদের"]],
+ reply:{lead:"৬ ও ৭ নং আয়াতের পর আল্লাহ বলেন",ar:"هَذَا لِعَبْدِي، وَلِعَبْدِي مَا سَأَلَ",bn:"এটি আমার বান্দার জন্য; আর আমার বান্দা যা চাইল, তা সে পাবে।"},
+ note:"অনুগ্রহপ্রাপ্ত কারা, কুরআন নিজেই বলে দিয়েছে (সূরা আন-নিসা ৪:৬৯): নবীগণ, সিদ্দিকগণ, শহীদগণ ও সৎকর্মশীলগণ। মুফাসসিরদের ব্যাখ্যায়, যারা সত্য জেনেও মানে না তারা ক্রোধের শিকার, আর যারা না জেনে ভুল পথে চলে তারা পথভ্রষ্ট। সঠিক পথ হলো জ্ঞান ও আমলের মিলন।"}
+];
+AYAT.forEach(a=>{a.ar=a.w.map(x=>x[0]).join(" ")});
+
+const SVG={
+arch:'<svg viewBox="0 0 120 120" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 112h104"/><path d="M18 112V60C18 34 36 18 60 8c24 10 42 26 42 52v52"/><path d="M32 112V64c0-20 12-32 28-42 16 10 28 22 28 42v48"/><circle cx="60" cy="54" r="17" fill="currentColor" fill-opacity=".14" stroke="none"/><path d="M60 22v20"/><path d="M52 44h16l-3 13H55z" fill="currentColor" fill-opacity=".4"/></svg>',
+tent:'<svg viewBox="0 0 120 120" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 104h108"/><path d="M14 104 60 48l46 56"/><path d="M60 48 48 104M60 48l12 56"/><path d="M48 104c4-14 8-24 12-32 4 8 8 18 12 32z" fill="currentColor" fill-opacity=".3"/><path d="M96 12a14 14 0 1 0 8 25 11 11 0 1 1-8-25z" fill="currentColor" stroke="none"/><path d="M30 20v10M25 25h10M70 10v7M66.5 13.5h7"/></svg>',
+door:'<svg viewBox="0 0 120 120" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M42 62V34c0-12 8-20 18-25 10 5 18 13 18 25v28z"/><path d="M51 62V38c0-6 4-11 9-14 5 3 9 8 9 14v24z" fill="currentColor" fill-opacity=".3"/><path d="M50 70 34 96M60 70v22M70 70l16 26" stroke-dasharray="3 7"/><circle cx="42" cy="106" r="12" fill="currentColor" fill-opacity=".16" stroke="none"/><circle cx="78" cy="106" r="12" fill="currentColor" fill-opacity=".16" stroke="none"/><circle cx="42" cy="106" r="6.5" fill="currentColor" stroke="none"/><circle cx="78" cy="106" r="6.5" fill="currentColor" stroke="none"/></svg>'
+};
+
+const STORIES=[
+{svg:SVG.arch,t:"যে সূরা কুরআনের সবচেয়ে মহান",
+ p:["সাহাবি আবু সাঈদ ইবনুল মুআল্লা (রা.) মসজিদে নামাজ পড়ছিলেন। এমন সময় নবীজি ﷺ তাঁকে ডাকলেন। নামাজ শেষ না করে তিনি সাড়া দিলেন না; পরে এসে বললেন, ‘হে আল্লাহর রাসূল, আমি নামাজে ছিলাম।’",
+ "নবীজি ﷺ বললেন, ‘আল্লাহ কি বলেননি, আল্লাহ ও রাসূল যখন তোমাদের ডাকেন, তখন সাড়া দাও?’ (সূরা আল-আনফাল ৮:২৪) তারপর বললেন, ‘মসজিদ থেকে বের হওয়ার আগেই তোমাকে কুরআনের সবচেয়ে মহান সূরাটি শিখিয়ে দেব।’ এই বলে তিনি তাঁর হাত ধরলেন।",
+ "বের হওয়ার মুহূর্তে আবু সাঈদ (রা.) প্রতিশ্রুতির কথা মনে করিয়ে দিলেন। নবীজি ﷺ বললেন, ‘আলহামদু লিল্লাহি রাব্বিল আলামীন। এটিই বারবার পঠিত সাত আয়াত, আর সেই মহান কুরআন, যা আমাকে দেওয়া হয়েছে।’"],
+ src:[["সহিহ বুখারি ৪৪৭৪","https://sunnah.com/bukhari:4474"]],
+ take:"সবচেয়ে মূল্যবান জিনিসটি অনেক সময় সবচেয়ে পরিচিত। যে সূরা আমরা প্রতিদিন পড়ি, সেটিই কুরআনের সবচেয়ে মহান সূরা।"},
+{svg:SVG.tent,t:"সাত আয়াতে আরোগ্য",
+ p:["একদল সাহাবি সফরে বের হয়েছিলেন। পথে এক আরব গোত্রের কাছে যাত্রাবিরতি নিয়ে তাঁরা আতিথ্য চাইলেন, কিন্তু গোত্রের লোকেরা আপ্যায়ন করতে রাজি হলো না।",
+ "এরই মধ্যে গোত্রের সর্দারকে সাপ বা বিচ্ছু দংশন করল। সব রকম চেষ্টা করেও কাজ হলো না। শেষে তারা এল সেই মুসাফিরদের কাছেই। সাহাবিদের একজন বললেন, ‘আমি রুকইয়াহ (কুরআন পড়ে ঝাড়ফুঁক) করতে জানি। কিন্তু তোমরা আমাদের আতিথ্য দাওনি, তাই পারিশ্রমিক ঠিক না হলে করব না।’ এক পাল বকরির বিনিময়ে তারা রাজি হলো।",
+ "তিনি সূরা আল-ফাতিহা পড়ে পড়ে ফুঁ দিতে লাগলেন। সর্দার উঠে দাঁড়ালেন, যেন বাঁধন খুলে দেওয়া হয়েছে, আর এমনভাবে হাঁটতে লাগলেন যেন কিছুই হয়নি।",
+ "সাহাবিরা ঠিক করলেন, নবীজিকে ﷺ জিজ্ঞেস না করে কিছু ভাগ করবেন না। সব শুনে নবীজি ﷺ হাসলেন এবং বললেন, ‘তুমি কীভাবে জানলে যে এটি রুকইয়াহ?’ তারপর বললেন, ‘তোমরা ঠিক করেছ। ভাগ করে নাও, আর আমার জন্যও একটি ভাগ রেখো।’"],
+ src:[["সহিহ বুখারি ২২৭৬","https://sunnah.com/bukhari:2276"],["৫৭৩৬","https://sunnah.com/bukhari:5736"]],
+ take:"ফাতিহা দোয়া ও আরোগ্যের পাঠ। আর কোনো বিষয়ে নিশ্চিত না হলে সাহাবিরা আগে নবীজির ﷺ কাছে জেনে নিতেন, তারপর কাজ করতেন।"},
+{svg:SVG.door,t:"আকাশের এক নতুন দরজা",
+ p:["একদিন জিবরীল (আ.) নবীজির ﷺ কাছে বসে ছিলেন। ওপর থেকে একটি শব্দ শুনে তিনি মাথা তুললেন এবং বললেন, ‘আকাশের এই দরজাটি আজ খোলা হলো; আজকের আগে কখনো খোলা হয়নি।’",
+ "সেই দরজা দিয়ে নেমে এলেন এক ফেরেশতা। জিবরীল (আ.) বললেন, ইনি আজকের আগে কখনো পৃথিবীতে নামেননি। ফেরেশতা সালাম দিয়ে বললেন, ‘দুটি নূরের সুসংবাদ গ্রহণ করুন, যা আপনাকে দেওয়া হয়েছে, আপনার আগে কোনো নবীকে দেওয়া হয়নি: ফাতিহাতুল কিতাব আর সূরা আল-বাকারার শেষ আয়াতগুলো। এর যে অংশই আপনি পড়বেন, তাতে যা চাওয়া হয়েছে তা আপনাকে দেওয়া হবে।’"],
+ src:[["সহিহ মুসলিম ৮০৬","https://www.sunnah.com/muslim:806"]],
+ take:"ফাতিহা এক অনন্য উপহার, এক নূর। এর দোয়াগুলো আমরা কবুলের প্রতিশ্রুতি নিয়েই পড়ি।"}
+];
+
+const LESSONS=[
+{v:1,t:"শুরু হোক তাঁর নামে",b:"বিসমিল্লাহ দিয়ে শুরু করা মানে কাজটিকে আল্লাহর সঙ্গে জুড়ে দেওয়া: তাঁর সাহায্য চাওয়া, আর মনে রাখা যে কাজটি তাঁর সন্তুষ্টির জন্য। ছোট-বড় প্রতিটি ভালো কাজে এটি বরকতের দরজা খুলে দেয়।",p:"আজ খাওয়া, পড়া আর ঘর থেকে বের হওয়া: এই তিনটি কাজ সচেতনভাবে বিসমিল্লাহ বলে শুরু করুন।"},
+{v:2,t:"অভিযোগের আগে কৃতজ্ঞতা",b:"সূরার প্রথম কথাই আলহামদুলিল্লাহ। চাওয়ার আগে শোকর, এটাই দোয়ার আদব। যা পেয়েছি তার দিকে তাকালে, যা পাইনি তার কষ্ট হালকা হয়ে আসে।",p:"আজ রাতে এমন তিনটি নিয়ামত লিখুন, যেগুলোর জন্য আগে কখনো আলাদা করে শোকর করেননি।"},
+{v:3,t:"রহমতের আশা কখনো ছাড়বেন না",b:"সাত আয়াতের এই সূরায় আল্লাহ দুবার নিজেকে রাহমান ও রাহীম বলে পরিচয় দিয়েছেন। ভুল যত বড়ই হোক, ফেরার দরজা খোলা। আর দয়ালু রবের বান্দা নিজেও মানুষের প্রতি দয়ালু হয়।",p:"আজ কারও জন্য নীরবে একটি দয়ার কাজ করুন, যা কেউ জানবে না।"},
+{v:4,t:"প্রতিটি কাজের হিসাব আছে",b:"বিচার দিবসের মালিক আল্লাহ, এই বিশ্বাস মানুষকে সৎ রাখে, এমনকি যখন কেউ দেখছে না। দয়ার আশা আর হিসাবের ভয়, এই দুই ডানায় ভর করেই মুমিন এগিয়ে চলে।",p:"ঘুমানোর আগে দুই মিনিট নিজের দিনের হিসাব নিন: কী ভালো হলো, কী শোধরাতে হবে।"},
+{v:5,t:"ইবাদত তাঁর, ভরসাও তাঁর",b:"এটিই তাওহিদের মূলকথা: শুধু আল্লাহর ইবাদত, শুধু তাঁর কাছেই সাহায্য। ইবাদতের কথা আগে, সাহায্যের কথা পরে; দায়িত্ব পালন আমাদের, সফলতা তাঁর হাতে। আর ‘আমরা’ শব্দটি মনে করিয়ে দেয়, মুমিন কখনো একা নয়।",p:"পরের কঠিন কাজটির আগে দোয়া করুন, তারপর নিজের সর্বোচ্চ চেষ্টা দিন।"},
+{v:6,t:"সবচেয়ে বড় চাওয়া: সঠিক পথ",b:"সম্পদ, সাফল্য, সুস্থতা, সবকিছুর আগে এই সূরা হিদায়াত চাইতে শেখায়। সঠিক পথ পেলে বাকি সব অর্থবহ হয়; পথ হারালে কোনো কিছুই যথেষ্ট নয়।",p:"পরের নামাজে ‘ইহদিনাস সিরাতাল মুসতাকীম’ পড়ার সময় অর্থটা মনে মনে ভাবুন, আর সত্যিই চান।"},
+{v:7,t:"জ্ঞান ও আমল, একসঙ্গে",b:"সঠিক পথ মানে জানা এবং মানা, দুটোই। জেনেও না মানা, কিংবা না জেনে আবেগে চলা, দুটোই পথ হারানোর ঝুঁকি। তাই অনুগ্রহপ্রাপ্তদের পথ অনুসরণ করুন, আর ভালো মানুষের সঙ্গ খুঁজুন।",p:"এ সপ্তাহে কুরআনের একটি আয়াতের অর্থ শিখুন, আর তা জীবনে প্রয়োগের একটি উপায় ঠিক করুন।"}
+];
+
+const grp=n=>n<5?"g1":n===5?"g2":"g3";
+$("cells").innerHTML=AYAT.map(a=>`<a href="#ayah-${a.n}" class="${grp(a.n)}" aria-label="আয়াত ${bn(a.n)}">${star}<b>${bn(a.n)}</b></a>`).join("");
+
+const reply=a=>a.reply
+ ?`<div class="reply"><p class="rl">${star}${a.reply.lead||"আল্লাহ বলেন"}</p><p class="rar" lang="ar" dir="rtl">${a.reply.ar}</p><p class="rbn">“${a.reply.bn}”</p>${a.reply.alt?`<p class="alt">${a.reply.alt}</p>`:""}</div>`
+ :`<div class="reply none"><p>${a.none}</p></div>`;
+$("ayat").innerHTML=AYAT.map((a,i)=>`<article class="ayah" id="ayah-${a.n}">
+<div class="main">
+<p class="ar full" lang="ar" dir="rtl">${a.ar} ${ros(a.n)}</p>
+<div class="ar wbw" lang="ar" dir="rtl">${a.w.map(([x,y],j)=>`<span class="w"><b>${x}${j===a.w.length-1?" "+ros(a.n):""}</b><small lang="bn" dir="ltr">${y}</small></span>`).join("")}</div>
+<p class="tr">${a.tr}</p>
+<p class="bn"><span class="vn">${bn(a.n)}</span>${a.bn}</p>
+<button type="button" class="copy" data-i="${i}">কপি করুন</button>
+</div>
+<div class="side">${reply(a)}<p class="note"><b>ব্যাখ্যা</b>${saw(a.note)}</p></div>
+</article>`).join("");
+
+$("story-list").innerHTML=STORIES.map(s=>`<article class="story">${s.svg}<div><h3>${s.t}</h3>${s.p.map(x=>`<p>${saw(x)}</p>`).join("")}<p class="src">সূত্র: ${s.src.map(([l,u])=>`<a href="${u}">${l}</a>`).join(", ")}</p></div><div class="take"><b>এই ঘটনার শিক্ষা</b><p>${saw(s.take)}</p></div></article>`).join("");
+
+let done=[];
+try{const x=JSON.parse(localStorage.getItem("qs-fatiha-done")||"[]");if(Array.isArray(x))done=x.filter(n=>n>=1&&n<=7)}catch(e){}
+$("lesson-list").innerHTML=LESSONS.map(l=>{const on=done.includes(l.v);return `<article class="lesson"><a class="lros" href="#ayah-${l.v}" aria-label="আয়াত ${bn(l.v)} দেখুন">${star}<b>${bn(l.v)}</b></a><div><h3>${l.t}</h3><p>${l.b}</p></div><div class="prac"><b>অনুশীলন</b><p>${l.p}</p><button type="button" class="done" data-v="${l.v}" aria-pressed="${on}">${on?"✓ সম্পন্ন":"সম্পন্ন করেছি"}</button></div></article>`}).join("");
+const meter=()=>{$("meter").innerHTML=LESSONS.map(l=>`<svg viewBox="0 0 40 40" class="${done.includes(l.v)?"on":""}" aria-hidden="true"><use href="#khatam"/></svg>`).join("")+`<span>${bn(done.length)}/৭ অনুশীলন সম্পন্ন</span>`};
+meter();
+
+let st={wbw:false,tr:true,k:1};
+try{const s=JSON.parse(localStorage.getItem("qs-fatiha-set")||"null");if(s&&typeof s==="object")st=Object.assign(st,s)}catch(e){}
+const apply=()=>{
+ R.classList.toggle("wbw",!!st.wbw);R.classList.toggle("no-tr",!st.tr);R.style.setProperty("--k",st.k);
+ $("m-full").setAttribute("aria-pressed",String(!st.wbw));$("m-wbw").setAttribute("aria-pressed",String(!!st.wbw));
+ $("t-tr").setAttribute("aria-pressed",String(!!st.tr));$("s-dn").disabled=st.k<=.8;$("s-up").disabled=st.k>=1.5;
+ try{localStorage.setItem("qs-fatiha-set",JSON.stringify(st))}catch(e){}
+};
+$("m-full").addEventListener("click",()=>{st.wbw=false;apply()});
+$("m-wbw").addEventListener("click",()=>{st.wbw=true;apply()});
+$("t-tr").addEventListener("click",()=>{st.tr=!st.tr;apply()});
+$("s-dn").addEventListener("click",()=>{st.k=Math.max(.8,Math.round((st.k-.1)*10)/10);apply()});
+$("s-up").addEventListener("click",()=>{st.k=Math.min(1.5,Math.round((st.k+.1)*10)/10);apply()});
+apply();
+
+document.addEventListener("click",async e=>{
+ const c=e.target.closest(".copy");
+ if(c){
+  const a=AYAT[+c.dataset.i];let ok=false;
+  try{await navigator.clipboard.writeText(`${a.ar}\n${a.bn}\n(সূরা আল-ফাতিহা, আয়াত ${bn(a.n)})`);ok=true}catch(err){}
+  c.textContent=ok?"কপি হয়েছে":"কপি করা যায়নি";clearTimeout(c._t);c._t=setTimeout(()=>{c.textContent="কপি করুন"},1800);return;
+ }
+ const d=e.target.closest(".done");
+ if(d){
+  const v=+d.dataset.v,i=done.indexOf(v),on=i<0;
+  if(on)done.push(v);else done.splice(i,1);
+  d.setAttribute("aria-pressed",String(on));d.textContent=on?"✓ সম্পন্ন":"সম্পন্ন করেছি";meter();
+  try{localStorage.setItem("qs-fatiha-done",JSON.stringify(done))}catch(err){}
+ }
+});
+
+const bar=$("prog");
+const prog=()=>{const h=R.scrollHeight-R.clientHeight;bar.style.transform=`scaleX(${h>0?Math.min(1,Math.max(0,scrollY/h)):0})`};
+addEventListener("scroll",prog,{passive:true});addEventListener("resize",prog);prog();
+}
+</script>
+</body>
+</html>
